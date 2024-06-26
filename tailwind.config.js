@@ -2,6 +2,9 @@ module.exports = {
   content: ['docs/index.html'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Noto Sans JP"', 'sans-serif'],
+      },
       colors: {
         primary: '#53C8D2',
         primaryLight: {
