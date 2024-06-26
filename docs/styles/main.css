@@ -593,6 +593,10 @@ video {
   margin-right: auto;
 }
 
+.-mr-1 {
+  margin-right: -0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -601,12 +605,28 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
 
 .me-2 {
   margin-inline-end: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .ms-2 {
@@ -623,6 +643,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-3 {
@@ -657,6 +681,14 @@ video {
   width: 1.25rem;
 }
 
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -665,12 +697,20 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.place-self-center {
+  place-self: center;
 }
 
 .rounded {
@@ -764,31 +804,6 @@ video {
   background-color: rgb(83 200 210 / var(--tw-bg-opacity));
 }
 
-.bg-primaryLight-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 254 255 / var(--tw-bg-opacity));
-}
-
-.bg-primaryLight-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 251 255 / var(--tw-bg-opacity));
-}
-
-.bg-primaryLight-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(183 239 245 / var(--tw-bg-opacity));
-}
-
-.bg-primaryLight-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(149 226 234 / var(--tw-bg-opacity));
-}
-
-.bg-primaryLight-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(116 213 222 / var(--tw-bg-opacity));
-}
-
 .bg-purple-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(126 34 206 / var(--tw-bg-opacity));
@@ -807,10 +822,6 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .p-6 {
@@ -872,6 +883,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -888,6 +904,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -919,12 +940,28 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .text-black {
@@ -940,6 +977,11 @@ video {
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -1097,9 +1139,70 @@ video {
     line-height: 2.25rem;
   }
 
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-0 {
+    gap: 0px;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -1147,6 +1250,11 @@ video {
   .dark\:bg-gray-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 
   .dark\:bg-green-600 {
