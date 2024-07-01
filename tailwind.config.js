@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Noto Sans JP"', 'sans-serif'],
+        sans: ['Noto Sans JP', 'sans-serif'],
+        poppins: ['Poppins', 'Noto Sans JP', 'sans-serif'],
       },
       colors: {
         primary: '#53C8D2',
