@@ -1262,8 +1262,8 @@ video {
     padding-bottom: 4rem;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
+  .lg\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -1273,8 +1273,8 @@ video {
     gap: 0px;
   }
 
-  .xl\:text-6xl {
-    font-size: 3.75rem;
+  .xl\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }
