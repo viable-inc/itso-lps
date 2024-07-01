@@ -705,9 +705,18 @@ video {
   gap: 2rem;
 }
 
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .place-self-center {
@@ -937,6 +946,10 @@ video {
 
   .md\:w-1\/4 {
     width: 25%;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
   .md\:flex-row {
