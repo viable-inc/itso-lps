@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Noto Sans JP, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -705,6 +705,11 @@ video {
   gap: 2rem;
 }
 
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
 .place-self-center {
   place-self: center;
 }
@@ -819,11 +824,11 @@ video {
   text-align: center;
 }
 
-.font-poppins {
+.font-en {
   font-family: Poppins, Noto Sans JP, sans-serif;
 }
 
-.font-sans {
+.font-jp {
   font-family: Noto Sans JP, sans-serif;
 }
 
